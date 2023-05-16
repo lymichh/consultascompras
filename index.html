@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Consultas SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<div class="inner">
+			<span class="icon solid major fa-cloud"></span>
+			<h1>Consultas realizadas con <strong>BigQuery</strong> para dar<br />
+			respuesta a las siguientes preguntas:</h1>
+			<p> 1. ¿Cuál es el producto más vendido en una ubicación geográfica específica?<br />
+				2. ¿Cuántos clientes han comprado productos de un rango de precios específico?<br />
+				3. ¿Cuáles son los clientes más frecuentes en realizar compras y cuánto han gastado en total?<br />
+				4. ¿Cuál es el producto más vendido en cada ubicación geográfica?<br />
+				5. ¿Cuáles son los clientes que han comprado todos los productos disponibles?
+			</p>
+			<ul class="actions special">
+				<li><a href="#one" class="button scrolly">Detalles</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- One -->
+	<section id="one" class="main style1 special">
+			<div class="container">
+				<header class="major">
+					<h2>Consultas en BigQuery</h2>
+				</header>
+				<div class="row gtr-500">
+					<div class="col-4 col-12-medium">
+						<h3>1</h3>
+						<p>Consulta de los productos más vendidos en una ubicación geográfica determinada.</p>
+						<ul class="actions special">
+							</li><a href="https://console.cloud.google.com/bigquery?sq=210647160403:8de8426804d3452bab05078c545614ea" class="button">Ver más</a></li>
+						</ul>
+					</div>
+					<div class="col-4 col-12-medium">
+						<h3>2</h3>
+						<p>Cantidad de clientes que han comprado productos entre un rango de precios.</p>
+						<ul class="actions special">
+							<li><a href="https://console.cloud.google.com/bigquery?sq=210647160403:c786145a478b4e73bf5a893f0d7d0dbb" class="button">Ver más</a></li>
+						</ul>
+					</div>
+					<div class="col-4 col-12-medium">
+						<h3>3</h3>
+						<p>Clientes más frecuentes en realizar compras y su gasto total.</p>
+						<ul class="actions special">
+							<a href="https://console.cloud.google.com/bigquery?sq=210647160403:483b882e24794ec7b417a29592f9af88" class="button">Ver más</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row gtr-300" style = "margin-left: 250px;"> 
+					<div class="col-4 col-12-medium">
+						<h3>4</h3>
+						<p>Productos más vendidos según la ubicación geográfica.</p>
+						<ul class="actions special">
+							<li><a href="https://console.cloud.google.com/bigquery?sq=210647160403:cc70c2d98a1d4399942d148c96550a8b" class="button">Ver más</a></li>
+						</ul>
+					</div>
+					<div class="col-4 col-12-medium">
+						<h3>5</h3>
+						<p>Clientes que han comprado todos los productos disponibles.</p>
+						<ul class="actions special">
+							<li><a href="https://console.cloud.google.com/bigquery?sq=210647160403:eb21751919754298969d89936fb75157" class="button">Ver más</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!-- Two -->
+	<section id="two" class="main style2 special">
+		<div class="container">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<header class="major" style = "margin-top: 70px;">
+							<h2>Dashboard</h2>
+						</header>
+						<p>A través del dashboard desarrollado, es posible observar los resultados obtenidos en cada una de las consultas de forma clara y agradable.</p>
+						<ul class="actions special">
+						</li><a href="https://lookerstudio.google.com/reporting/26c45cc5-51fb-40e1-9071-eee5c500e678" class="button">Looker Studio</a></li>
+						</ul>
+					</div>
+					<div class="col-3 col-4-medium imp-medium">
+						<figure><img src="images/capture.png" height = "450" alt="#"/></figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Three -->
+		<section id="three" class="main style1 special">
+			<div class="container">
+				<header class="major">
+					<h2>Resultados</h2>
+				</header>
+				<h3>Consulta 1</h3>
+				<p> Para la ubicación geográfica se especifica una latitud a partir de 10.94 y una longitud hasta -74.78,
+					obteniendo como resultado que el producto más vendido en estas zonas es el café, con 3705 ventas.
+				</p>
+				<figure><img src="images/Tabla1.png" height = "370" alt="#"/></figure>
+				<p>
+					 
+				</p>
+				<h3>Consulta 2</h3>
+				<p> Para obtener la cantidad de clientes de los productos, se establece que su rango de precios sea de mínimo $3000 y
+					máximo $20000, obteniendo los resultados a continuación:
+				</p>
+				<figure><img src="images/Tabla2.png" height = "280" alt="#"/></figure>
+				<p>
+					 
+				</p>
+				<h3>Consulta 3</h3>
+				<p> La siguiente tabla presenta los clientes más frecuentes en realizar compras y el gasto que han tenido en total.
+				</p>
+				<figure><img src="images/Tabla3.png" height = "370" alt="#"/></figure>
+				<p>
+					 
+				</p>
+				<h3>Consulta 4</h3>
+				<p> A continuación se presenta una parte de la lista de los productos más vendidos según la ubicación geográfica,
+					establecida por latitud y longitud, junto su número de compras correspondiente.
+				</p>
+				<figure><img src="images/Tabla4.png" height = "460" alt="#"/></figure>
+				<p>
+					 
+				</p>
+				<h3>Consulta 5</h3>
+				<p> Para observar los clientes se toman en cuenta aquellos cuya cantidad de productos comprados sean 10, que corresponde al
+					total de productos disponibles, y a continuación se presentan los resultados:
+				</p>
+				<figure><img src="images/Tabla5.png" height = "290" alt="#"/></figure>
+			</div>
+		</section>
+
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="https://www.instagram.com/lymichh/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<ul class="copyright">
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
